@@ -2,32 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 main{
   @apply max-w-7xl mx-auto px-4 h-full text-white my-6;
 }
 
 section{
+  @apply p-4 h-full
+}
+
+.user-bio-section{
   background: rgba( 255, 255, 255, 0.05 );
   box-shadow: 0 2px 4px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 5px );
--webkit-backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-  @apply p-4 h-full;
-
 }
 
 body{
   @apply bg-primary;
 }
 
-.skills > ul{
+ul{
   list-style: none;
   @apply flex gap-2 flex-wrap;
 }
 
-.skills > ul > li{
-  @apply my-1 bg-slate-800 py-1 px-2 rounded-md text-xs cursor-pointer;
+ul > li{
+  @apply my-1 py-1 px-2 rounded-md text-xs cursor-pointer;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+
 }
